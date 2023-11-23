@@ -1,0 +1,22 @@
+https://community.listopro.com/realiza-un-crud-en-mysql-con-node-js/
+bajar node 
+y ejecutar los siguientes comandos en la terminal dentro de la carpeta del proyecto
+
+npm init -y // resumen como crea un proyecto sin colocar los detalles
+npm install mysql2 // conector a mysql
+npm install express // framework para el uso mas facil de node
+npm install nodemon // para evitar la necesidad de reiniciar el servidor cada vez que hiciéramos algún cambio
+
+se crea una carpeta src y dentro el archivo app.js en este 
+archivo creamos la configuracion del servidor 
+
+luego se crea una carpeta llamada conection (dentro de la carpeta src) y dentro creamos un archivo index.js 
+es importante recordar que hay que tener mysql instalado en el entorno lo que estamos  usando con node es solo 
+un conectir (npm install mysql2)
+
+creamos las rutas, dentro de la carpeta src creamos otra carpeta llamada router y un archivo llamado actors.js
+
+(el archivo de coneccion y la base de datos tienen que estar corriendo en el mismo puerto)
+
+en el archivo querys.js se colocan todas las consultas a la base de datos 
+y actors.js recibe la meticion y hace referencia a el archivo de consulta 
